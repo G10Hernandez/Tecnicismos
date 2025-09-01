@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* metálico oscuro */
+  color: #e0e0e0;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  color: #fff;
+  box-shadow: 0 0 20px #00e5ff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+/* Layout principal tipo revista */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* artículos más grandes, sidebar más pequeño */
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Artículos */
+.post {
+  background: rgba(40, 40, 50, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00e5ff;
+}
+
+.post h2 {
+  color: #4facfe;
+  text-shadow: 0 0 5px #00e5ff;
+  margin-bottom: 10px;
+}
+
+/* Sidebar */
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.widget {
+  background: rgba(25, 25, 35, 0.9);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+
+.widget h3 {
+  color: #ff00ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+.widget ul {
+  list-style: none;
+}
+
+.widget ul li {
+  margin: 8px 0;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  box-shadow: 0 -2px 20px #00e5ff;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr; /* Sidebar se va abajo */
+  }
+}
