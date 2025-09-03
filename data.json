@@ -1,0 +1,36 @@
+{
+  "articulos": [
+    {
+      "titulo": "La nueva era de la inteligencia artificial",
+      "contenido": "La IA está transformando la manera en que interactuamos con la tecnología. Desde asistentes virtuales hasta creación de contenido, el futuro ya está aquí.",
+      "categoria": "IA"
+    },
+    {
+      "titulo": "Los smartphones del futuro",
+      "contenido": "Diseños plegables, pantallas holográficas y baterías de grafeno prometen revolucionar el mercado móvil en los próximos años.",
+      "categoria": "Móviles"
+    },
+    {
+      "titulo": "Realidad aumentada en la vida diaria",
+      "contenido": "La realidad aumentada pasará de los videojuegos a la educación, el comercio y la salud, ofreciendo experiencias inmersivas únicas.",
+      "categoria": "AR"
+    },
+    {
+      "titulo": "El futuro de los chips cuánticos",
+      "contenido": "Los procesadores cuánticos podrían resolver problemas que hoy en día son imposibles para las supercomputadoras tradicionales.",
+      "categoria": "Hardware"
+    }
+  ],
+  "noticias": [
+    "🚀 SpaceX lanza nueva misión a Marte",
+    "🤖 OpenAI presenta IA más avanzada",
+    "📱 Samsung prepara nuevo plegable",
+    "🕶️ Meta impulsa la realidad aumentada"
+  ],
+  "gadgets": [
+    "⌚ Smartwatch de titanio",
+    "🎧 Audífonos con cancelación avanzada",
+    "💻 Laptop ultraligera",
+    "🔋 Powerbank solar"
+  ]
+}

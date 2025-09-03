@@ -80,28 +80,45 @@ aside {
   gap: 20px;
 }
 
-.widget {
-  background: rgba(25, 25, 35, 0.9);
+/* Estilo futurista para el filtro de categorías */
+.widget select {
+  width: 100%;
+  padding: 10px;
   border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+  border: 2px solid #4facfe;
+  background: rgba(10, 10, 20, 0.95);
+  color: #00f2fe;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-shadow: 0 0 8px #00e5ff;
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.6);
+  transition: all 0.3s ease;
 }
 
-.widget h3 {
+/* Hover futurista */
+.widget select:hover {
+  border-color: #ff00ff;
   color: #ff00ff;
-  margin-bottom: 10px;
-  text-shadow: 0 0 5px #ff00ff;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
 }
 
-.widget ul {
-  list-style: none;
+/* Animación suave al cambiar */
+.widget select:focus {
+  outline: none;
+  animation: glow 1.5s infinite alternate;
 }
 
-.widget ul li {
-  margin: 8px 0;
-  padding: 5px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+/* Keyframes para efecto de resplandor */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+  }
+  to {
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+  }
 }
+
 
 /* Footer */
 footer {
@@ -111,6 +128,26 @@ footer {
   color: #fff;
   box-shadow: 0 -2px 20px #00e5ff;
 }
+
+/* Animación de entrada futurista */
+.post {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Keyframes del efecto */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Responsivo */
 @media (max-width: 900px) {
